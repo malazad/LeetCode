@@ -6,5 +6,4 @@ class Solution:
                 hashmap[num] = 0
             hashmap[num] += 1
         hashmap = dict(sorted(hashmap.items(), key=lambda item: item[1], reverse=True))
-        print(hashmap)
         return list(dict(list(hashmap.items())[:k]).keys())
